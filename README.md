@@ -42,7 +42,7 @@ Como ataque especial, quando um jogador estiver a perder, é possivel andar no t
 ---
 
 **Requisito 1.**
-Cada jogador começa com 1000 pontos de vida e 1000 pontos de estamina. Um jogador nunca pode ter mais do que 1000 pontos de vida e 1000 pontos de estamina.
+Cada jogador começa com **837** pontos de vida e **791** pontos de estamina. Um jogador nunca pode ter mais do que **999** pontos de vida e **1003** pontos de estamina.
 
 **Requisito 2**
 O jogador vence quando o seu oponente tem pontos de vida nulos ou negativos. Neste caso, o jogo termina.
@@ -54,10 +54,10 @@ OS jogadores podem empatar quando obtêm ao mesmo tempo pontos de vida nulos ou 
 O número de jogadores é sempre 2.
 
 **Requisito 5**
-Um jogador pode realizar até 4 ataques em cada jogada (não pode escrever mais de 4 caracteres).
+Um jogador pode realizar até **5** ataques em cada jogada (não pode escrever mais de **5** caracteres).
 
 **Requisito 6**
-Um jogador pode realizar apenas 1 combo em cada jogada (neste caso, escreve mais de 4 caracteres).
+Um jogador pode realizar apenas 1 combo em cada jogada (neste caso, escreve mais de **5** caracteres).
 
 **Requisito 7**
 Não se pode combinar ataques com combos.
@@ -99,7 +99,7 @@ Se valor é negativo jogador2 tira esse valor positivo em pontos à vida do joga
 
         
 **Requisito 12**
-Cada ataque efectuado pelo jogador faz perder 25 pontos de estamina (com exceção do *Defender* e *Descansar*). O valor mínimo da estamina é zero. O jogador pode continuar a realizar ataques mesmo com estamina a zero. 
+Cada ataque efectuado pelo jogador faz perder 23 pontos de estamina (com exceção do *Defender* e *Descansar*). O valor mínimo da estamina é zero. O jogador pode continuar a realizar ataques mesmo com estamina a zero. 
 
 **Requisito 13**
 À medida que a estamina diminui, o jogador perde mais vida ao sofrer ataques do oponente, de acordo com a seguinte lógica:
@@ -115,7 +115,7 @@ Cada ataque efectuado pelo jogador faz perder 25 pontos de estamina (com exceç�
 *Combos não são afetados pelo fator multiplicativo.*
 
 **Requisito 14**
-Quando um jogador utilizar o ataque *Defender*, ele gasta 10 pontos de estamina e recupera 10 pontos de vida. A recuperação de vida também é afetada pelo fator multiplicativo.
+Quando um jogador utilizar o ataque *Defender*, ele **sobe 7 pontos** de estamina e recupera **13** pontos de vida. A recuperação de vida também é afetada pelo fator multiplicativo.
 - Exemplo: Se o jogador estiver com estamina abaixo de 250, recupera então 40 pontos de vida.
 
 **Requisito 15**
@@ -160,7 +160,7 @@ Existe um combo especial chamado *Lucio Tarzan Reversal*, que é ativado quando 
 
 **Requisito 16.3**
 Se o valor X de ataques é superior ao numero maximo que jogadas ocorridas, o jogo volta para o início.
-
+(Testar isto no pandora)
 **Requisito 16.4**
 O jogador só pode fazer o combo especial *"TARZANTABORDA"* quando a estamina for maior que 500 e menor que 900.
 
@@ -171,7 +171,7 @@ O jogador só pode fazer o combo especial *"TARZANTABORDA"* quando a estamina fo
 O histórico de ataques realizados, pontos de vida e pontos de estamina de cada jogador é obrigatoriamente guardado numa lista ligada.
 
 **Requisito 19**
-Antes de um jogador fazer sua jogada, os últimos 20 ataques realizados pelo jogador são impressos no ecrã.
+Antes de um jogador fazer sua jogada, os últimos **17** ataques realizados pelo jogador são impressos no ecrã.
 
 **Requisito 20**
 Antes de um jogador fazer sua jogada, os pontos de sua vida e estamina são impressos.
@@ -186,7 +186,7 @@ Pode se inserir as jogadas por um ficheiro. Ver exemplo no fim do enunciado.
 Cada linha do ficheiro representa uma jogada tal como descrito no requisito 5, 6, 8 e 16.
 
 **Requisito 24**
-Cada linha corresponde a uma jogada de 4 ataque ou um combo do jogador.
+Cada linha corresponde a uma jogada de **5** ataques ou um combo do jogador.
 Se a linha contem um ataque ou letra invalido o programa termina.
 Se a linha contem um combo com estamina suficiente, a linha é ignorada, e a **próxima linha é lida como os input corretos do jogador**.
 
