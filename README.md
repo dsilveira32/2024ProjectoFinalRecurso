@@ -1,4 +1,4 @@
-# Projecto Final 2024
+# Projecto Final Recurso 2024
 
 **UNIVERSIDADE LUSÓFONA DE HUMANIDADES E TECNOLOGIAS**
 
@@ -28,7 +28,7 @@
 
 
 ## Descrição do problema
-Neste projeto, vamos implementar um jogo de luta simples em linguagem C, onde dois jogadores irão confrontar-se num épico cenário de porrada da grossa. 
+Neste projeto, vamos implementar um jogo de luta simples em linguagem C, onde um jogadore humano contra jogaor computador lutam num épico cenário de porrada da grossa. 
 Cada jogador terá a oportunidade de escolher um conjunto de ataques em cada rodada, mas também terá de gerir a sua estamina. 
 
 Além disso, dependendo de sua estamina, o jogador pode activar um *combo*, que é um ataque que causa um número significativo de danos e consome mais estamina.
@@ -51,7 +51,11 @@ O jogador vence quando o seu oponente tem pontos de vida nulos ou negativos. Nes
 OS jogadores podem empatar quando obtêm ao mesmo tempo pontos de vida nulos ou negativos. Neste caso, o jogo termina.
 
 **Requisito 4**
-O número de jogadores é sempre 2.
+O número de jogadores é sempre 2. Sendo um jogador humano inserindo dados pelo teclado ou ficheiro. 
+O segundo jogador é computador que gera um numero aleatorio entre 1 e 20, cada numero corresponde a seguinte jogada
+(tabela com ataques e combos, tarzantaborda tem de gerar 2 numeros).
+O numero aleatorio é gerado com a função rand usando uma semente fornecida no inicio do programa.
+
 
 **Requisito 5**
 Um jogador pode realizar até **5** ataques em cada jogada (não pode escrever mais de **5** caracteres).
